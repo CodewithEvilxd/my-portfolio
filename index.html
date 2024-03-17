@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100vh, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+
+        body {
+            background-color: #000;
+            overflow: visible
+        }
+
+        #name {
+            font-family: "Barlow", sans-serif;
+            font-weight: 900;
+            color: #fff;
+            font-size: 40px;
+            font-style: italic;
+            position: relative;
+            top: 120px;
+            left: 100px;
+            text-shadow: 2px 2px 15px #5a5a5a
+        }
+
+        .nameDown {
+            font-family: "Barlow", sans-serif;
+            font-weight: 600;
+            letter-spacing: 8px;
+            font-size: 20px;
+            color: #fff;
+            font-style: italic;
+            position: relative;
+            top: 110px;
+            left: 100px;
+            margin-top: 15px;
+            animation: leftToRight 1s ease 0s normal
+        }
+
+        @keyframes leftToRight {
+            0% {
+                left: -20px;
+            }
+
+            100% {
+                left: 100px;
+            }
+        }
+
+        .indNameDown {
+            margin-top: 6px
+        }
+
+        .nameDown2 {
+            font-family: "Barlow", sans-serif;
+            font-weight: 400;
+            color: #fff;
+            position: relative;
+            top: 200px;
+            left: 100px
+        }
+
+        .projectButton {
+            font-family: sans-serif;
+            height: 40px;
+            width: 120px;
+            position: relative;
+            top: 220px;
+            left: 100px;
+            text-decoration: none;
+            border: 1px solid #0cf11f;
+            border-radius: 30px;
+            opacity: .6;
+            transition: all .5s
+        }
+
+        .projectButton:hover {
+            opacity: 1;
+            cursor: pointer
+        }
+
+        nav {
+            display: flex;
+            justify-content: center
+        }
+
+        .Navigate {
+            text-decoration: none;
+            color: #fff;
+            opacity: .5;
+            margin-left: 88px;
+            margin-top: 30px;
+            font-family: "Barlow", sans-serif;
+            font-weight: 400;
+            transition: all .5s;
+            border-radius: 10px;
+            padding: 10px 15px
+        }
+
+        .Navigate:hover {
+            opacity: 1;
+            background-color: #fff;
+            color: #000
+        }
+
+        #element {
+            color: #5baff8
+        }
+
+        #😶 {
+            font-size: small;
+            position: absolute;
+            top: 2px;
+            text-decoration: none;
+            text-shadow: none;
+            opacity: .7;
+            font-weight: 300;
+            margin-left: 22px
+        }
+
+        section {
+            height: 100vh;
+            width: 100%
+        }
+
+        #text {
+            font-family: "Barlow", sans-serif;
+            font-weight: 500;
+            color: #fff;
+            font-size: 40px;
+            position: relative;
+            text-shadow: 2px 2px 10px 2px #555;
+            transition: all .5s
+        }
+
+        #UpperText {
+            font-size: small;
+            color: #fff;
+            margin-left: 250px;
+            text-decoration: none;
+            text-shadow: none;
+            opacity: .7;
+            font-weight: 300
+        }
+
+        .card {
+            height: 300px;
+            width: 200px;
+            background-color: #252525;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 50px;
+            transition: all .5s
+        }
+
+        .card img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly
+        }
+
+        .sec {
+            text-align: center
+        }
+
+        .Contact p {
+            color: #fff;
+            text-align: left;
+            margin: 130px 5px 110px 30px;
+            font-family: Barlow
+        }
+
+        .Contact a {
+            background-color: #303030;
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+            transition: all .5s
+        }
+
+        .Contact a:hover {
+            box-shadow: 2px 2px 10px #242424
+        }
+
+        .Contact a img {
+            width: 50px
+        }
+
+        #TechStack .container .card {
+            margin-top: 100px
+        }
+
+        .innerSec {
+            margin-top: 100px
+        }
+
+        #TechStack .container .card {
+            transition: all .5s
+        }
+
+        #TechStack .container .card:hover {
+            box-shadow: 2px 2px 5px 2px #3a3a3a
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#Home" class="Navigate">Home</a>
+        <a href="#TechStack" class="Navigate">Tech Stack</a>
+        <a href="#Contact" class="Navigate">About Me</a>
+    </nav>
+    <main>
+        <section id="Home">
+            <div id="name">
+                <span id="😶">
+                    My Name is
+                </span>
+
+                <h1 data-aos="fade-right">NISHANT GAURAV</h1>
+
+            </div>
+            <div class="nameDown">
+                I am a
+                <span id="element"></span>
+            </div>
+            <p class="nameDown2" id="element2" data-aos="fade-right">I am <span class="color">Passionate</span> in
+                Programming, Development and Designing</p>
+
+
+
+        </section>
+        <section id="TechStack" class="sec">
+            <div class="div">
+
+                <h1 id="text" data-aos="fade-up">MY TECH STACK</h1>
+            </div>
+
+            <div class="container">
+                <div class="card" data-aos="fade-right" data-aos-delay="100">
+
+                    <img src="html.webp" alt="html">
+
+                </div>
+                <div class="card" data-aos="fade-right" data-aos-delay="300">
+                    <img src="data:image/webp;base64,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"
+                        alt="html">
+                </div>
+                <div class="card" data-aos="fade-right" data-aos-delay="700">
+                    <img src="js.png" alt="html">
+                </div>
+            </div>
+
+        </section>
+        <section class="Contact sec" id="Contact">
+            <div class="innerSec">
+                <h1 id="text" data-aos="fade-up">About Me</h1>
+                <p id="element3" data-aos="fade-right">My Name is Nishant Gaurav, I am currently learning Web
+                    Development<br>I also make content on my Instagram And Youtube,<br> Where I Share my Journey of Learning whole
+                    full stack Web Development and <br.</p>
+                <div class="container" data-aos="fade-left">
+                    <a href="https://github.com/codewithEvilxd" class="social"><img
+                            src="https://pngimg.com/d/github_PNG32.png" alt=" github" width="100px"></a>
+                    <a href="https://www.instagram.com/game_changer.09/" class="social"><img
+                            src="https://images.vexels.com/media/users/3/137198/isolated/lists/07f0d7b69ef071571e4ada2f4d6a053a-instagram-icon-colorful.png"
+                            alt="instagram" "></a>
+            </div>
+        </div>
+            
+
+        </section>
+        
+
+        
+    </main>
+
+    <script src=" https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                        <script>var typed = new Typed('#element', { strings: ['CONTENT CREATOR', 'WEB DEVELOPER'], typeSpeed: 50, });</script>
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>AOS.init();</script>
+                        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+                        <script>new TypeIt("#element2", { speed: 5, }).go(); new TypeIt("#element3", { speed: 5, }).go();</script>
+
+</body>
